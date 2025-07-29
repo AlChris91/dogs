@@ -2,7 +2,7 @@ import React from "react";
 import Input from "../Form/Input";
 import Button from "../Form/Button";
 import useForm from "../../Hooks/useForm";
-import { USEr_POST } from "../../api";
+import { USER_POST } from "../../api";
 import { UserContext } from "../../UserContext";
 import useFetch from "../../Hooks/useFetch";
 import Error from "../../Helper/Error";
@@ -17,7 +17,7 @@ const LoginCreate = () => {
 
   async function handleSubmit(event) {
     event.preventDefault;
-    const { url, options } = USEr_POST({
+    const { url, options } = USER_POST({
       username: username.value,
       email: email.value,
       password: password.value,
