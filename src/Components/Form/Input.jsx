@@ -1,4 +1,4 @@
-import styles from "./Button.module.css";
+import styles from "./Input.module.css";
 
 const Input = ({ label, type, name, value, onChange, error, onBlur }) => {
   return (
@@ -6,7 +6,7 @@ const Input = ({ label, type, name, value, onChange, error, onBlur }) => {
       <label htmlFor={name} className={styles.label}>
         {label}
       </label>
-      <Input
+      <input
         id={name}
         className={styles.input}
         type={type}
