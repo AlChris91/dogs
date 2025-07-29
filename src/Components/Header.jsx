@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import React from "react";
 import styles from "./Header.module.css";
 import Dogs from "../Assets/dogs.svg?react";
 import { UserContext } from "../UserContext";
